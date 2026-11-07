@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeltzDental — бережная стоматология | Запись на приём</title>
+  <meta name="description" content="Частная стоматология VeltzDental: лечение без боли, имплантация, гигиена, отбеливание. Оставьте заявку — администратор перезвонит в течение 15 минут.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='32' fill='%230f766e'/><text x='32' y='43' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'>V</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">Veltz<span>Dental</span></a>
+      <nav class="nav" id="nav">
+        <a href="#services">Услуги</a>
+        <a href="#doctor">Врач</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#works">Работы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="header-phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Бережная стоматология для всей семьи</h1>
+          <p class="hero-sub">Лечим без боли и лишних визитов: честная диагностика, понятный план лечения и цены до начала работы.</p>
+          <ul class="hero-points">
+            <li>Приём по записи, без очередей</li>
+            <li>Стоимость известна до начала лечения</li>
+            <li>Современное оборудование и материалы</li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <h2>Запись на приём</h2>
+          <p>Оставьте имя и телефон — администратор перезвонит в течение 15 минут и подберёт удобное время.</p>
+          <form id="appointment-form" method="POST">
+            <input type="hidden" name="_subject" value="Заявка с сайта VeltzDental">
+            <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off">
+            <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+            <button class="btn" type="submit">Записаться</button>
+            <label class="consent">
+              <input type="checkbox" name="consent" required>
+              <span>Согласен(на) с <a href="privacy.html" target="_blank" rel="noopener">политикой конфиденциальности</a> и на обработку персональных данных</span>
+            </label>
+          </form>
+          <div class="form-status" id="form-status" role="status"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Услуги и цены</span>
+          <h2>Что мы делаем</h2>
+          <p>Основные направления клиники. Точную стоимость врач назовёт после осмотра — до начала лечения.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Лечение кариеса</h3>
+            <p>Лечение под микроскопом с анестезией, без боли и дискомфорта.</p>
+            <div class="service-price">от 3 500 ₽</div>
+          </article>
+          <article class="service-card">
+            <h3>Профессиональная гигиена</h3>
+            <p>Ультразвуковая чистка и полировка зубов, Air Flow.</p>
+            <div class="service-price">от 4 000 ₽</div>
+          </article>
+          <article class="service-card">
+            <h3>Имплантация</h3>
+            <p>Восстановление зуба «под ключ»: имплант, коронка, контроль приживления.</p>
+            <div class="service-price">от 35 000 ₽</div>
+          </article>
+          <article class="service-card">
+            <h3>Протезирование</h3>
+            <p>Керамические и циркониевые коронки, виниры, съёмные протезы.</p>
+            <div class="service-price">от 12 000 ₽</div>
+          </article>
+          <article class="service-card">
+            <h3>Ортодонтия</h3>
+            <p>Выравнивание зубов брекетами и элайнерами для детей и взрослых.</p>
+            <div class="service-price">от 60 000 ₽</div>
+          </article>
+          <article class="service-card">
+            <h3>Отбеливание</h3>
+            <p>Безопасное клиническое отбеливание за один визит.</p>
+            <div class="service-price">от 15 000 ₽</div>
+          </article>
+        </div>
+        <p class="services-note">Это базовый прайс — итоговая стоимость зависит от клинической ситуации.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="doctor">
+      <div class="container doctor-grid">
+        <div class="doctor-photo" aria-hidden="true">И</div>
+        <div>
+          <span class="eyebrow">Главный врач</span>
+          <h2 class="doctor-name">Иванов Иван Иванович</h2>
+          <p class="doctor-role">Стоматолог-терапевт, ортопед. Клиника носит его имя — и это про уровень ответственности.</p>
+          <p class="doctor-bio">Окончил медицинский университет, специализируется на бережном лечении и протезировании. Ежегодно проходит стажировки у ведущих клиник, работает по протоколам доказательной медицины. Известен тем, что не «раскручивает» пациентов на лишние процедуры: план лечения — только то, что действительно нужно.</p>
+          <div class="doctor-stats">
+            <div class="stat"><b>15+</b><span>лет опыта</span></div>
+            <div class="stat"><b>3000+</b><span>пациентов</span></div>
+            <div class="stat"><b>100+</b><span>часов повышения квалификации</span></div>
+          </div>
+          <p class="section-note">Специализации, стаж и цифры — заглушки: подтвердим дипломами и документами врача перед публикацией.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Отзывы</span>
+          <h2>Что говорят пациенты</h2>
+        </div>
+        <p class="section-note">Сейчас здесь демонстрационные отзывы-заглушки — перед публикацией заменим на реальные отзывы пациентов.</p>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <p class="review-text">Впервые не боюсь идти к стоматологу. Всё объяснили, показали план и цену заранее. Лечили два зуба — не почувствовала ничего.</p>
+            <div class="review-author">
+              <div class="avatar">А</div>
+              <div><b>Анна</b><span>34 года</span></div>
+            </div>
+          </article>
+          <article class="review-card">
+            <p class="review-text">Сделал имплантацию после долгих сомнений. Всё прошло спокойно, восстановился быстро. Спасибо доктору за терпение к вопросам.</p>
+            <div class="review-author">
+              <div class="avatar">Д</div>
+              <div><b>Дмитрий</b><span>41 год</span></div>
+            </div>
+          </article>
+          <article class="review-card">
+            <p class="review-text">Ходим всей семьёй, в том числе с детьми. Дочь раньше плакала в клиниках — здесь спокойно сидит в кресле и смеётся.</p>
+            <div class="review-author">
+              <div class="avatar">М</div>
+              <div><b>Мария</b><span>29 лет</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="works">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Наши работы</span>
+          <h2>Результаты до и после</h2>
+          <p>Примеры работ врача. Публикуются только с письменного согласия пациентов.</p>
+        </div>
+        <div class="works-grid">
+          <figure class="work-card">
+            <div class="work-photos">
+              <div class="work-photo before"><span>До</span></div>
+              <div class="work-photo after"><span>После</span></div>
+            </div>
+            <figcaption>Реставрация переднего зуба</figcaption>
+          </figure>
+          <figure class="work-card">
+            <div class="work-photos">
+              <div class="work-photo before"><span>До</span></div>
+              <div class="work-photo after"><span>После</span></div>
+            </div>
+            <figcaption>Имплантация и коронка</figcaption>
+          </figure>
+          <figure class="work-card">
+            <div class="work-photos">
+              <div class="work-photo before"><span>До</span></div>
+              <div class="work-photo after"><span>После</span></div>
+            </div>
+            <figcaption>Отбеливание за один визит</figcaption>
+          </figure>
+          <figure class="work-card">
+            <div class="work-photos">
+              <div class="work-photo before"><span>До</span></div>
+              <div class="work-photo after"><span>После</span></div>
+            </div>
+            <figcaption>Выравнивание элайнерами</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Контакты</span>
+          <h2>Как нас найти</h2>
+        </div>
+        <div class="contacts-grid">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <span class="contact-label">Адрес</span>
+              <span>г. Город, ул. Центральная, д. 1, офис 10</span>
+            </li>
+            <li class="contact-item">
+              <span class="contact-label">Телефон</span>
+              <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+            </li>
+            <li class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:info@veltzdental.ru">info@veltzdental.ru</a>
+            </li>
+            <li class="contact-item">
+              <span class="contact-label">Режим работы</span>
+              <span>Пн–Пт 9:00–20:00, Сб 9:00–18:00, Вс — выходной</span>
+            </li>
+          </ul>
+          <div class="map-placeholder">Здесь будет Яндекс Карта</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#hero">Veltz<span>Dental</span></a>
+      <p>© VeltzDental, <span id="year">2026</span>. Частная стоматологическая клиника.</p>
+      <a class="header-phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+    </div>
+    <div class="container footer-legal">
+      <p class="legal-line">ИП Иванов Иван Иванович · ИНН и ОГРНИП уточняются · Лицензия на медицинскую деятельность № уточняется · Информация на сайте не является публичной офертой</p>
+      <nav class="legal-links">
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="terms.html">Условия использования</a>
+        <a href="refund.html">Политика возврата</a>
+        <a href="cookie-policy.html">Использование cookie</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner" hidden>
+    <p>Мы используем файлы cookie, чтобы сайт работал корректно. <a href="cookie-policy.html">Подробнее</a></p>
+    <button class="btn" id="cookie-accept" type="button">Хорошо</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

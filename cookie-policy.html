@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Использование файлов cookie — VeltzDental</title>
+  <meta name="description" content="Как сайт VeltzDental использует файлы cookie и как ими управлять в браузере.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='32' fill='%230f766e'/><text x='32' y='43' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'>V</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Veltz<span>Dental</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#doctor">Врач</a>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="index.html#works">Работы</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <a class="header-phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container legal-body">
+      <div class="legal-banner">Документ-заглушка: структура и основные пункты заполнены. Перед публикацией текст должен проверить юрист клиники.</div>
+      <h1>Использование файлов cookie</h1>
+      <p class="legal-meta">Редакция от 8 ноября 2026 года</p>
+
+      <h2>1. Что такое cookie</h2>
+      <p>Cookie — небольшие текстовые файлы, которые сайт сохраняет в вашем браузере. Они помогают сайту работать корректно и запоминать ваши предпочтения.</p>
+
+      <h2>2. Какие cookie мы используем</h2>
+      <ul>
+        <li>технические: запоминаем, что вы закрыли баннер о cookie, чтобы не показывать его повторно;</li>
+        <li>сторонние: при загрузке интерактивной карты Яндекс может устанавливать собственные cookie.</li>
+      </ul>
+
+      <h2>3. Аналитика</h2>
+      <p>Счётчик Яндекс Метрики планируется подключить позже. Перед подключением мы обновим эту политику и баннер о cookie.</p>
+
+      <h2>4. Как управлять cookie</h2>
+      <p>Cookie можно очистить или заблокировать в настройках вашего браузера (Chrome, Firefox, Safari, Edge). Сайт останется рабочим и без cookie — изменится только поведение баннера.</p>
+
+      <h2>5. Вопросы</h2>
+      <p>Вопросы по использованию cookie: <a href="mailto:info@veltzdental.ru">info@veltzdental.ru</a>.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html">Veltz<span>Dental</span></a>
+      <p>© VeltzDental, <span id="year">2026</span>. Частная стоматологическая клиника.</p>
+      <a class="header-phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+    </div>
+    <div class="container footer-legal">
+      <p class="legal-line">ИП Иванов Иван Иванович · ИНН и ОГРНИП уточняются · Лицензия на медицинскую деятельность № уточняется · Информация на сайте не является публичной офертой</p>
+      <nav class="legal-links">
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="terms.html">Условия использования</a>
+        <a href="refund.html">Политика возврата</a>
+        <a href="cookie-policy.html">Использование cookie</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner" hidden>
+    <p>Мы используем файлы cookie, чтобы сайт работал корректно. <a href="cookie-policy.html">Подробнее</a></p>
+    <button class="btn" id="cookie-accept" type="button">Хорошо</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
