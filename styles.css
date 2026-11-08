@@ -24,7 +24,14 @@ html {
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: var(--text);
@@ -32,7 +39,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -200,7 +209,9 @@ a {
   font: inherit;
   color: var(--text);
   margin-bottom: 12px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .form-card input:focus {
@@ -303,7 +314,9 @@ a {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
-  transition: border-color 0.2s, transform 0.2s;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
 }
 
 .service-card:hover {
@@ -561,12 +574,17 @@ a {
   color: var(--muted);
 }
 
-.hidden-field {
+.form-card input.hidden-field {
   position: absolute;
   width: 1px;
   height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .consent {
